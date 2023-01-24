@@ -1,13 +1,14 @@
 <!-- Basic JavaScript-rendered Hello World -->
 <!-- http://localhost:3000/isolated/final/01.html -->
 
+
 <body>
   <div id="root"></div>
-  <script type="module">
-    const rootElement = document.getElementById('root')
-    const element = document.createElement('div')
-    element.textContent = 'Hello World'
-    element.className = 'container'
-    rootElement.append(element)
-  </script>
+    <script type="module">
+        var root = document.getElementById("root")
+        var div = document.createElement("div")
+        div.className = 'container'
+        div.textContent = "Hello World"
+        root.append(div)
+    </script>
 </body>
