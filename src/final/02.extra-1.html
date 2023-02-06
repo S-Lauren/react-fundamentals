@@ -3,3 +3,15 @@
 <!-- http://localhost:3000/isolated/final/02.extra-1.html -->
 
 
+<body>
+    <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+        <script type="module">
+        const bodyElement = document.body
+        const spanHello = React.createElement('span',{}, 'Hello ')
+        const spanWorld = React.createElement('span',{}, 'World')
+        const divElem =React.createElement('div', {className: 'container' }, spanHello,spanWorld)
+        const rootElem = React.createElement('div', {id: 'root'},divElem )
+        ReactDOM.createRoot(bodyElement).render(rootElem)
+    </script>
+</body>
